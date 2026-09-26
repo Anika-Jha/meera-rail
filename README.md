@@ -397,7 +397,7 @@ The caller cannot choose:
 
 ---
 
-# 🧑‍💻 CLI buyer
+#  CLI buyer
 
 The repository also contains an automated x402 buyer example:
 
@@ -440,7 +440,7 @@ The recommended user-facing payment flow is the browser wallet.
 
 ---
 
-# ⚙️ Installation
+#  Installation
 
 Clone the repository and install dependencies:
 
@@ -470,7 +470,7 @@ Do not commit `.env`.
 
 ---
 
-# ▶️ Run locally
+#  Run locally
 
 Development mode:
 
