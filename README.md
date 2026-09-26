@@ -1,4 +1,4 @@
-# 🚆 MeeraRail
+#  MeeraRail
 
 ### Paste a railway delay notice. Get clean data. Pay only when it works.
 
