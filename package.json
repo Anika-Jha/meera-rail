@@ -1,0 +1,35 @@
+{
+  "name": "meera-rail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "test": "vitest run tests",
+    "test:watch": "vitest tests",
+    "buyer": "tsx buyer/buy.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@hono/node-server": "^2.1.1",
+    "@x402/core": "^2.27.0",
+    "@x402/evm": "^2.27.0",
+    "@x402/fetch": "^2.27.0",
+    "@x402/hono": "^2.27.0",
+    "dotenv": "^18.0.4",
+    "hono": "^4.13.9",
+    "viem": "^2.56.9",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}

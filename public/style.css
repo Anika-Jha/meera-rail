@@ -1,0 +1,242 @@
+.info-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 12px 40px rgba(20, 30, 50, 0.04);
+  }
+  
+  .info-card h2 {
+    margin-top: 0;
+  }
+  
+  .eyebrow.small {
+    margin-bottom: 6px;
+    font-size: 10px;
+  }
+  
+  .steps {
+    display: grid;
+    gap: 18px;
+    margin-top: 24px;
+  }
+  
+  .step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  
+  .step-number {
+    flex: 0 0 34px;
+    height: 34px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 50%;
+    background: #172033;
+    color: white;
+  
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .step h3 {
+    margin: 0 0 4px;
+    font-size: 15px;
+  }
+  
+  .step p {
+    margin: 0;
+    color: #667085;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  .json-example {
+    margin: 20px 0 0;
+    padding: 18px;
+  
+    overflow-x: auto;
+  
+    border-radius: 12px;
+    background: #172033;
+    color: #f4f5f7;
+  
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 20px;
+  }
+  
+  .pricing-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  
+    padding: 18px;
+  
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+  }
+  
+  .pricing-item strong {
+    font-size: 25px;
+  }
+  
+  .pricing-item span:last-child {
+    color: #737b8a;
+    font-size: 13px;
+  }
+  
+  .pricing-name {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .small-note {
+    margin: 18px 0 0;
+    color: #737b8a;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  .failure-flow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0;
+  }
+  
+  .failure-flow > div {
+    flex: 1;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  
+    padding: 16px;
+  
+    background: #f7f8fa;
+    border-radius: 12px;
+  
+    text-align: center;
+  }
+  
+  .failure-icon {
+    font-size: 24px;
+  }
+  
+  .failure-flow strong {
+    font-size: 12px;
+  }
+  
+  .arrow {
+    color: #9aa1ae;
+    font-weight: 700;
+  }
+  
+  .endpoint {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+    margin-top: 10px;
+    padding: 13px 15px;
+  
+    border-radius: 10px;
+    background: #f7f8fa;
+  }
+  
+  .endpoint code {
+    flex: 1;
+    font-size: 13px;
+  }
+  
+  .endpoint > span:last-child {
+    color: #737b8a;
+    font-size: 11px;
+    font-weight: 700;
+  }
+  
+  .method {
+    color: #267a35;
+    font-size: 11px;
+    font-weight: 800;
+  }
+  
+  .free-endpoint .method {
+    color: #526581;
+  }
+  
+  .testnet-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  
+    margin-top: 20px;
+    padding: 20px;
+  
+    border: 1px solid #d9e3f0;
+    border-radius: 16px;
+  
+    background: #f4f8fc;
+  }
+  
+  .testnet-banner strong {
+    font-size: 14px;
+  }
+  
+  .testnet-banner p {
+    margin: 5px 0 0;
+    color: #667085;
+    font-size: 12px;
+  }
+  
+  .network-badge {
+    padding: 7px 10px;
+    border-radius: 8px;
+  
+    background: white;
+    border: 1px solid #d9e3f0;
+  
+    font-family: monospace;
+    font-size: 11px;
+  }
+  
+  @media (max-width: 600px) {
+    .pricing-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .failure-flow {
+      flex-direction: column;
+    }
+  
+    .failure-flow > div {
+      width: 100%;
+    }
+  
+    .arrow {
+      transform: rotate(90deg);
+    }
+  
+    .endpoint {
+      flex-wrap: wrap;
+    }
+  
+    .testnet-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

@@ -1,0 +1,235 @@
+
+              MeeraRail extracts the train, station,
+              expected time, and delay reason.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PARSER -->
+
+    <section class="card">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow small">LIVE PARSER</p>
+          <h2>Parse a delay notice</h2>
+        </div>
+
+        <span class="price">$0.001</span>
+      </div>
+
+      <p class="description">
+        Try a real-looking railway notice below or paste your own.
+      </p>
+
+      <label for="notice">
+        Railway notice
+      </label>
+
+      <textarea
+        id="notice"
+        placeholder="Example: Train 12951 at PUNE: Expected at 18:45. Delay due to heavy rain."
+        maxlength="5000"
+      ></textarea>
+
+      <div class="input-footer">
+        <span id="character-count">0 / 5000</span>
+        <span>Maximum 5,000 characters</span>
+      </div>
+
+      <button id="parse-button">
+        Connect Wallet & Parse — $0.001
+      </button>
+
+      <p id="wallet-status" class="payment-note">
+        Base Sepolia testnet • USDC • Your wallet signs the payment
+      </p>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section
+      id="result"
+      class="result card hidden"
+      aria-live="polite"
+    ></section>
+
+
+    <!-- WHAT YOU GET -->
+
+    <section class="info-card">
+
+      <p class="eyebrow small">OUTPUT</p>
+
+      <h2>What MeeraRail returns</h2>
+
+      <p class="description">
+        A successful parse produces predictable JSON instead
+        of forcing your application to understand a human-written notice.
+      </p>
+
+      <pre class="json-example"><code>{
+  "train": "12951",
+  "station": "PUNE",
+  "expectedTime": "18:45",
+  "reason": "heavy rain"
+}</code></pre>
+
+    </section>
+
+
+    <!-- PRICING -->
+
+    <section class="info-card">
+
+      <p class="eyebrow small">SIMPLE PRICING</p>
+
+      <h2>Pay per parse</h2>
+
+      <div class="pricing-grid">
+
+        <div class="pricing-item">
+          <span class="pricing-name">
+            Single parse
+          </span>
+
+          <strong>$0.001</strong>
+
+          <span>
+            1 railway notice
+          </span>
+        </div>
+
+        <div class="pricing-item">
+          <span class="pricing-name">
+            Bulk parse
+          </span>
+
+          <strong>$0.003</strong>
+
+          <span>
+            Up to 50 notices
+          </span>
+        </div>
+
+      </div>
+
+      <p class="small-note">
+        Payments currently use test USDC on Base Sepolia.
+        No subscription, API key, or account is required.
+      </p>
+
+    </section>
+
+
+    <!-- FAILURE BEHAVIOR -->
+
+    <section class="info-card">
+
+      <p class="eyebrow small">IMPORTANT</p>
+
+      <h2>What happens when a notice cannot be read?</h2>
+
+      <div class="failure-flow">
+
+        <div>
+          <span class="failure-icon">📄</span>
+          <strong>Unreadable notice</strong>
+        </div>
+
+        <span class="arrow">→</span>
+
+        <div>
+          <span class="failure-icon">⚠️</span>
+          <strong>Parser rejects it</strong>
+        </div>
+
+        <span class="arrow">→</span>
+
+        <div>
+          <span class="failure-icon">↩️</span>
+          <strong>No successful result</strong>
+        </div>
+
+      </div>
+
+      <p class="description">
+        Meera's rule is simple: a buyer should not be paying
+        for data the parser could not produce.
+      </p>
+
+    </section>
+
+
+    <!-- API -->
+
+    <section class="info-card">
+
+      <p class="eyebrow small">FOR DEVELOPERS</p>
+
+      <h2>Use MeeraRail as an API</h2>
+
+      <p class="description">
+        The same parser is available through HTTP endpoints.
+      </p>
+
+      <div class="endpoint">
+        <span class="method">POST</span>
+        <code>/api/parse</code>
+        <span>$0.001</span>
+      </div>
+
+      <div class="endpoint">
+        <span class="method">POST</span>
+        <code>/api/parse/bulk</code>
+        <span>$0.003</span>
+      </div>
+
+      <div class="endpoint free-endpoint">
+        <span class="method">GET</span>
+        <code>/health</code>
+        <span>FREE</span>
+      </div>
+
+    </section>
+
+
+    <!-- TESTNET NOTICE -->
+
+    <section class="testnet-banner">
+
+      <div>
+        <strong>🧪 Testnet product</strong>
+
+        <p>
+          MeeraRail currently runs on Base Sepolia using
+          test USDC. No real funds are required.
+        </p>
+      </div>
+
+      <span class="network-badge">
+        eip155:84532
+      </span>
+
+    </section>
+
+
+    <footer>
+      <span>MeeraRail</span>
+      <span>•</span>
+      <span>Built for The Operator's Booth</span>
+      <span>•</span>
+      <span>Base Sepolia</span>
+    </footer>
+
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
